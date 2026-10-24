@@ -1,4 +1,4 @@
-FROM node:20-bullseye-slim
+FROM node:20-bookworm-slim
 
 RUN apt-get update && apt-get install -y \
     ffmpeg \
@@ -13,4 +13,4 @@ RUN npm install
 
 EXPOSE 8000
 
-CMD ["npm", "run", "Ovl"]
+CMD ["npm", "start"]
